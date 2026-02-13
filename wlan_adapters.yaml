@@ -123,6 +123,34 @@ profiles:
       10mhz: [mcs0_10mhz_lgi, mcs1_10mhz_lgi, mcs2_10mhz_lgi, mcs2_10mhz_sgi, mcs3_10mhz_lgi, mcs3_10mhz_sgi]
       20mhz: [mcs0_20mhz_lgi, mcs1_20mhz_lgi, mcs2_20mhz_lgi, mcs3_20mhz_lgi, mcs4_20mhz_sgi, mcs5_20mhz_sgi]
       40mhz: [mcs1_40mhz_lgi, mcs2_40mhz_lgi, mcs3_40mhz_lgi, mcs4_40mhz_sgi, mcs5_40mhz_sgi]
+  wyvern-200:
+    description: "Yolo!"
+    bw: [5,10,20]
+    stbc: [1]
+    ldpc_rx: [0]
+    ldpc_tx: [0,1]
+    guard: [long,short]
+    mcs: [0,1,2,3,4,5,6,7]
+    max_mtu: 3993
+    tx_power:
+      mcs0: [10, 10, 10, 10, 10]
+      mcs1: [10, 10, 10, 10, 10]
+      mcs2: [10, 10, 10, 10, 10]
+      mcs3: [10, 10, 10, 10, 10]
+      mcs4: [10, 10, 10, 10, 10]
+      mcs5: [10, 10, 10, 10, 10]
+      mcs6: [10, 10, 10, 10, 10]
+      mcs7: [10, 10, 10, 10, 10]
+    pwr_mw:
+      0: [1mW, 1mW, 1mW, 1mW, 1mW, 1mW, 1mW, 1mW]
+      1: [25mW, 25mW, 25mW, 25mW, 25mW, 16mW, 13mW, 8mW]
+      2: [80mW, 66mW, 58mW, 25mW, 25mW, 16mW, 13mW, 8mW]
+      3: [158mW, 148mW, 79mW, 25mW, 25mW, 16mW, 13mW, 8mW]
+      4: [213mW, 200mW, 79mW, 25mW, 25mW, 16mW, 13mW, 8mW]
+    link_modes:
+      5mhz: [mcs0_5mhz_lgi, mcs1_5mhz_lgi, mcs2_5mhz_lgi, mcs3_5mhz_lgi, mcs3_5mhz_sgi]
+      10mhz: [mcs0_10mhz_lgi, mcs1_10mhz_lgi, mcs2_10mhz_lgi, mcs3_10mhz_lgi]
+      20mhz: [mcs0_20mhz_lgi, mcs1_20mhz_lgi, mcs2_20mhz_lgi, mcs3_20mhz_lgi]
   default:
     description: "Default burnproof profile. Change to your correct profile."
     bw: [20]
@@ -149,3 +177,30 @@ profiles:
       4: 1mW
     link_modes:
       20mhz: [mcs0_20mhz_lgi, mcs1_20mhz_lgi, mcs2_20mhz_lgi, mcs3_20mhz_lgi, mcs4_20mhz_sgi, mcs5_20mhz_sgi]
+  default:
+    description: "Default burnproof profile. Change to your correct profile."
+    bw: [20]
+    stbc: [0]
+    ldpc_rx: [0]
+    ldpc_tx: [0]
+    guard: [long]
+    mcs: [0,1,2]
+    max_mtu: 1500
+    tx_power:
+      mcs0: [50]
+      mcs1: [50]
+      mcs2: [50]
+      mcs3: [50]
+      mcs4: [50]
+      mcs5: [50]
+      mcs6: [50]
+      mcs7: [50]
+    pwr_mw:
+      0: 1mW
+      1: 1mW
+      2: 1mW
+      3: 1mW
+      4: 1mW
+    link_modes:
+      20mhz: [mcs0_20mhz_lgi, mcs1_20mhz_lgi, mcs2_20mhz_lgi, mcs3_20mhz_lgi, mcs4_20mhz_sgi, mcs5_20mhz_sgi]
+  
