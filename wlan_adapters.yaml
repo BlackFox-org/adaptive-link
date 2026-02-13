@@ -129,7 +129,7 @@ profiles:
     stbc: [1]
     ldpc_rx: [0]
     ldpc_tx: [0,1]
-    guard: [long,short]
+    guard: [long]
     mcs: [0,1,2,3,4,5,6,7]
     max_mtu: 3993
     tx_power:
