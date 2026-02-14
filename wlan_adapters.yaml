@@ -203,4 +203,3 @@ profiles:
       4: 1mW
     link_modes:
       20mhz: [mcs0_20mhz_lgi, mcs1_20mhz_lgi, mcs2_20mhz_lgi, mcs3_20mhz_lgi, mcs4_20mhz_sgi, mcs5_20mhz_sgi]
-  
